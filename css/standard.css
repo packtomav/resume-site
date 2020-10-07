@@ -47,6 +47,7 @@ h1 {
     padding-top: 15vh;
     font-size: 2rem;
     text-shadow: 1px 1px black;
+    margin-top: 0;
 }
 
 
@@ -211,6 +212,16 @@ header {
     transform: translate(10%, 5%);
 }
 
+.green {
+    font-size: 3vh;
+}
 
+.taylor {
+    font-size: 3vh;
+}
+
+.moore {
+    font-size: 3vh;
+}
 
 

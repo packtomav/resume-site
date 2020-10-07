@@ -16,7 +16,7 @@
 	           <img class="logo" src="images/headshot.png"/>
 	           <a href="#home">Home</a>
 	           <a href="#resume">Resume</a>
-	           <a href="#work">Work</a>
+	           <a id="map-link" href="map.html">Work</a>
 	           <a href="#endorsements">Endorsements</a>
 	           <a href="#contact">Contact</a>
 	       </nav>
@@ -44,11 +44,13 @@
 	        </div>
 	   </article>
 	   
+	   <article id="map">
+	   </article>	   
 	   <article id="endorsements">
 	        <div id="comments">
                 <div id="eric">
 	                <img id="ericpic" src="images/eric.jpg"/>
-	                <p>Eric Green</p>
+	                <p class="green">Eric Green</p>
 	                <p>Former KPTM Videographer</p>
 	                <p>"I've worked with Chris Smith for more than five years.
 	                He is a diligent and dedicated staffer that works hard to fulfill his duties. 
@@ -60,13 +62,13 @@
 	           
 	           <div id="craig">
 	               <img id="craigpic" src="images/craig.jpg"/>
-	               <p>Craig Taylor</p>
+	               <p class="taylor">Craig Taylor</p>
 	               <p>Former KPTM Manager</p>
 	               <p>"Chris was a great employee to work with. He was someone that you could give a task to and know that it was going to be done. In the years that I worked with Chris I found that his attitude was great and his work ethic was second to none."</p>
 	           </div>
 	           <div id="nathan">
 	               <img id="nathanpic" src="images/nathan.jpg"/>
-	               <p>Nathan Moore</p>
+	               <p class="moore">Nathan Moore</p>
 	               <p>Former KPTM Meteorologist</p>
 	               <p>"Chris was very hard working and he always stepped up when he was asked to. I honestly have never seen someone work so much and he does it to make the work place go smoother. Overall, there is no doubt in my mind he would benefit anyone he would work for."</p>
 	           </div>
@@ -91,6 +93,14 @@
 	
 	
 	
-	
+	<script>
+		$(function(){
+			$("#map-link").click(function(){
+				var href=$(this).attr("href");
+				$("#map").load(href);
+				return false;
+			})
+		})
+	</script>
 	</body>
 </html>
